@@ -1,0 +1,13 @@
+{
+  "version": "1.0-fullmoon",
+  "date": "2025-11-04",
+  "description": "Shared assets for all Illumina subdomains",
+  "files": {
+    "colors-daynight.css": "v1.0",
+    "scripts/harmonize.js": "v1.0",
+    "scripts/tone.js": "v1.0",
+    "scripts/phase.js": "v1.0",
+    "fonts/": "v1.0",
+    "icons/": "v1.0"
+  }
+}
