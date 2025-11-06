@@ -18,6 +18,7 @@
   --bee-honey:#ffcc66;
   --bee-ivory:#fff7e6;
   --bee-gradient:linear-gradient(90deg,#ffcc66,#fff7e6);
+  --bee-text:#2b1a00;
 }
 
 /* 🌕 Quietmoon L. Moon — Reflection */
@@ -26,6 +27,7 @@
   --moon-blue:#b8c8ff;
   --moon-white:#f9fbff;
   --moon-gradient:linear-gradient(90deg,#b8c8ff,#f9fbff);
+  --moon-text:#0b1833;
 }
 
 /* 🌿 Monique Flowe — Motion / Flow */
@@ -34,6 +36,7 @@
   --monique-teal:#3acfb0;
   --monique-sea:#5df5dd;
   --monique-gradient:linear-gradient(90deg,#8fffc1,#3acfb0,#5df5dd);
+  --monique-text:#00332a;
 }
 
 /* 🍯 Sabrina Carpenter — Honey / Embodiment */
@@ -42,6 +45,7 @@
   --sabrina-gold:#ffd88f;
   --sabrina-rose:#ffc3b9;
   --sabrina-gradient:linear-gradient(90deg,#ffbfa3,#ffd88f,#ffc3b9);
+  --sabrina-text:#4a2b00;
 }
 
 /* 💜 Marina Diamandis — Froot / MirrorHoney / Knowing */
@@ -49,15 +53,17 @@
   --marina-violet:#b59cff;
   --marina-pearl:#faf8ff;
   --marina-gradient:linear-gradient(90deg,#b59cff,#faf8ff);
+  --marina-text:#2a1448;
 }
 
-/* 💎 Sigrid Solheim — Clarity / Northern Voice  */
+/* 💎 Sigrid Solheim — Clarity / Refraction / Sun-on-Water */
 :root {
-  --sigrid-sky:#aee4ff;
-  --sigrid-ice:#e1f5ff;
-  --sigrid-rose:#ffd6e8;
-  --sigrid-hidden-green:#9df6c4; /* quiet life energy */
-  --sigrid-gradient:linear-gradient(90deg,#aee4ff,#e1f5ff,#ffd6e8);
+  --sigrid-blue:#6ea9ff;     /* denim honesty */
+  --sigrid-rose:#ff8aa0;     /* heart */
+  --sigrid-yellow:#ffd97b;   /* sunlight */
+  --sigrid-green:#aeead2;    /* sea-glass */
+  --sigrid-gradient:linear-gradient(90deg,#6ea9ff,#ff8aa0,#ffd97b,#aeead2);
+  --sigrid-text:#142b3a;
 }
 
 /* 🌸 Dagny Royke — Aurora / Joy Bridge */
@@ -67,6 +73,7 @@
   --dagny-peach:#ffd1aa;
   --dagny-green:#9df6c4;
   --dagny-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#9df6c4,#ffd1aa);
+  --dagny-text:#3a1426;
 }
 
 /* 🗝 Kendyl Skinner — Gate / Consent / Air */
@@ -75,19 +82,22 @@
   --kendyl-iris:#d5e7ff;
   --kendyl-opal:#f1fffa;
   --kendyl-gradient:linear-gradient(90deg,#c8fff1,#d5e7ff,#f1fffa);
+  --kendyl-text:#123833;
 }
 
 /* 🌑 Obsidian Night — Neutral / Void */
 :root {
   --obsidian-ink:#11141c;
   --obsidian-slate:#2a2e3a;
-  --obsidian-night:#000000;
   --obsidian-gradient:linear-gradient(90deg,#000000,#11141c,#2a2e3a);
+  --obsidian-text:#fafafa;
 }
 
-/* === NIGHT VARIANTS (automatic dark mode) === */
-@media (prefers-color-scheme: dark) {
-  :root {
+/* ===========================================================
+   NIGHT VARIANTS — automatic dark-mode response
+   =========================================================== */
+@media (prefers-color-scheme: dark){
+  :root{
     --bee-gradient:linear-gradient(90deg,#cc9a33,#ffcc66);
     --moon-gradient:linear-gradient(90deg,#091020,#243e6c);
     --sabrina-gradient:linear-gradient(90deg,#e2a84e,#f6c76b,#ffbfa3);
@@ -96,34 +106,27 @@
 }
 
 /* ===========================================================
-   OPTIONAL · Primary Light Overlay
-   Three-color blend: red · yellow · blue — for Sigrid’s sunlight field
+   OPTIONAL · Primary Light Overlay (for Sigrid’s sunlight field)
    =========================================================== */
-
 :root {
   --primary-yellow:#ffe98a;
   --primary-blue:#aee4ff;
   --primary-red:#ff9ba3;
-  --primary-spectrum:linear-gradient(
-    90deg,
-    var(--primary-red),
-    var(--primary-yellow),
-    var(--primary-blue)
-  );
+  --primary-spectrum:linear-gradient(90deg,#ff9ba3,#ffe98a,#aee4ff);
 }
 
-.primary-light {
-  background-image: var(--primary-spectrum);
-  background-blend-mode: soft-light;
-  opacity: 0.35;
-  pointer-events: none;
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  transition: opacity 1s ease;
+.primary-light{
+  background-image:var(--primary-spectrum);
+  background-blend-mode:soft-light;
+  opacity:0.35;
+  pointer-events:none;
+  position:fixed;
+  inset:0;
+  z-index:0;
+  transition:opacity 1s ease;
 }
-body:hover .primary-light { opacity: 0.55; }
+body:hover .primary-light{opacity:0.55;}
 
 /* ===========================================================
-   END · Illumina 1 Core + Primary Light
+   END · Illumina 1 Core + Primary Light Overlay
    =========================================================== */
