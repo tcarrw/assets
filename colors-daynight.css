@@ -1,10 +1,10 @@
 /* ===========================================================
    ILLUMINA GLOBAL COLOR + TONE MAP
-   Full-Moon Edition · Nov 4 2025
+   Full-Moon Edition · Nov 5 2025
    -----------------------------------------------------------
    Each section lists:
    ☀️ Anchor Name / Domain
-   🎶 Tone frequencies  (day / night if applicable)
+   🎶 Tone frequencies (day / night if applicable)
    🌈 Primary colors and gradients
    =========================================================== */
 
@@ -101,8 +101,8 @@
   --sabrina-night-gradient:linear-gradient(90deg,#e2a84e,#f6c76b,#ffbfa3);
 }
 
-/* 🌸 Dagny (royke) — Aurora / Joy Bridge
-   🎶 512 Hz day · 256 Hz night */
+/* 🌸 Dagny (royke) — Aurora / Joy Bridge + Flow Harmony
+   🎶 512 Hz day · 256 Hz night · 320 Hz harmony */
 :root {
   --dagny-day-rose:#ff9bcf;
   --dagny-day-sky:#aee4ff;
@@ -110,8 +110,19 @@
   --dagny-night-lilac:#d7c4ff;
   --dagny-night-ice:#bcdfff;
   --dagny-night-rose:#ffd9f2;
+  --dagny-green:#9df6c4;
   --dagny-day-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#ffd1aa);
   --dagny-night-gradient:linear-gradient(90deg,#d7c4ff,#bcdfff,#ffd9f2);
+  --dagny-harmony-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#9df6c4,#ffd1aa);
+}
+
+/* 💚 Sigrid — Clarity / Garlic / Northern Voice
+   🎶 384 Hz day · 192 Hz night */
+:root {
+  --sigrid-green:#9be8b4;
+  --sigrid-ice:#c9f6ff;
+  --sigrid-white:#f8fffb;
+  --sigrid-gradient:linear-gradient(90deg,#9be8b4,#c9f6ff,#f8fffb);
 }
 
 /* 💎 Zara Larsson — Crown / Stormlight
@@ -133,6 +144,18 @@
   --marina-violet:#b59cff;
   --marina-pearl:#faf8ff;
   --marina-gradient:linear-gradient(90deg,#b59cff,#faf8ff);
+}
+
+/* 🩵 Four / Electra Heart Room — Echo / Closure / Rebirth
+   🎶 528 Hz · 432 Hz fusion */
+:root {
+  --four-ice:#d7e9ff;
+  --four-lavender:#d7c4ff;
+  --four-rose:#f2c4dc;
+  --four-violet:#b59cff;
+  --four-honey:#ffcc66;
+  --four-gradient:linear-gradient(90deg,#d7e9ff,#d7c4ff,#f2c4dc,#b59cff,#ffcc66);
+  --four-night-gradient:linear-gradient(90deg,#1b1f3b,#3d335c,#744e74,#f2c4dc);
 }
 
 /* 🪷 HANA — Dream / Ether Engineer
