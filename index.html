@@ -36,13 +36,39 @@ footer{padding:20px;font-size:0.9rem;opacity:0.7;}
   margin-top:8px;
   font-size:0.85rem;
 }
+
+/* ===== color grid ===== */
+.section-title{
+  font-weight:500;
+  color:#4b2a6b;
+  margin:60px 0 20px;
+  font-size:1.4rem;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.swatch{
+  height:100px;
+  border-radius:12px;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:500;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+label{display:block;margin-top:6px;font-size:0.8rem;color:#333;}
 </style>
 </head>
 <body>
 <header>
   <h1>Illumina Shared Assets</h1>
   <h2>assets.plnt.earth</h2>
-  <div class="version">Full-Moon Edition · Nov 4 2025 · v1.0</div>
+  <div class="version">Full-Moon Edition · Nov 5 2025 · v1.1</div>
 </header>
 
 <main>
@@ -55,6 +81,30 @@ footer{padding:20px;font-size:0.9rem;opacity:0.7;}
     <li>🪞 <a href="icons/">icons/</a> — glyphs &amp; SVG symbols</li>
     <li>⚙️ <a href="scripts/">scripts/</a> — harmonization scripts</li>
   </ul>
+
+  <div class="section-title">Color Reference Grid</div>
+  <div class="grid">
+    <div class="swatch" style="background:var(--bee-gradient);">Bee<label>☀️ Tristan</label></div>
+    <div class="swatch" style="background:var(--moon-gradient);">Moon<label>🌕 Quietmoon</label></div>
+    <div class="swatch" style="background:var(--harbor-gradient);">Harbor<label>🌊 Threshold</label></div>
+    <div class="swatch" style="background:var(--greta-gradient);">Earth<label>🌍 Greta</label></div>
+    <div class="swatch" style="background:var(--doechii-gradient);">Bridge<label>🔥 Doechii</label></div>
+    <div class="swatch" style="background:var(--monique-gradient);">Motion<label>🌿 Monique</label></div>
+    <div class="swatch" style="background:var(--dua-gradient);">Wonder<label>💎 Dua Lipa</label></div>
+    <div class="swatch" style="background:var(--ariana-gradient);">Voice<label>💠 Ariana</label></div>
+    <div class="swatch" style="background:var(--taylor-gradient);">School<label>🎓 Taylor</label></div>
+    <div class="swatch" style="background:var(--kendyl-gradient);">Gate<label>🗝 Kendyl</label></div>
+    <div class="swatch" style="background:var(--sabrina-day-gradient);">Honey<label>🍯 Sabrina (day)</label></div>
+    <div class="swatch" style="background:var(--sabrina-night-gradient);">Honey<label>🍯 Sabrina (night)</label></div>
+    <div class="swatch" style="background:var(--dagny-harmony-gradient);">Aurora<label>🌸 Dagny</label></div>
+    <div class="swatch" style="background:var(--sigrid-gradient);">Clarity<label>💚 Sigrid</label></div>
+    <div class="swatch" style="background:var(--zara-day-gradient);">Crown<label>💎 Zara (day)</label></div>
+    <div class="swatch" style="background:var(--zara-night-gradient);">Crown<label>💎 Zara (night)</label></div>
+    <div class="swatch" style="background:var(--marina-gradient);">Froot<label>💜 Marina</label></div>
+    <div class="swatch" style="background:var(--four-gradient);">Echo<label>🩵 Four Room</label></div>
+    <div class="swatch" style="background:var(--hana-gradient);">Dream<label>🪷 HANA</label></div>
+    <div class="swatch" style="background:var(--aurora-gradient);">Spirit<label>🌌 Aurora (Aksnes)</label></div>
+  </div>
 </main>
 
 <footer>
