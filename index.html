@@ -19,11 +19,24 @@ header{padding:40px 10%;}
 h1{font-weight:500;margin-bottom:0;}
 h2{font-weight:400;margin-top:0;color:#4b2a6b;}
 main{padding:20px 5%;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:16px;max-width:900px;margin:0 auto;}
-.swatch{height:100px;border-radius:12px;color:#fff;
-  display:flex;align-items:center;justify-content:center;
-  font-weight:500;box-shadow:0 4px 12px rgba(0,0,0,0.15);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;max-width:1100px;margin:0 auto;}
+.swatch{
+  border-radius:12px;color:#fff;display:flex;
+  flex-direction:column;align-items:center;justify-content:center;
+  font-weight:500;box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  overflow:hidden;
+}
+.gradient-box{height:90px;width:100%;display:flex;
+  align-items:center;justify-content:center;}
+.legend{
+  width:100%;height:24px;display:flex;align-items:center;
+  justify-content:center;font-size:0.75rem;
+}
+.legend span{
+  display:inline-block;width:16px;height:16px;
+  border-radius:4px;margin-right:6px;
+}
 label{display:block;margin-top:6px;font-size:0.8rem;color:#333;}
 footer{padding:20px;font-size:0.9rem;opacity:0.7;}
 </style>
@@ -34,20 +47,57 @@ footer{padding:20px;font-size:0.9rem;opacity:0.7;}
 <header>
   <h1>Illumina 1 Shared Assets</h1>
   <h2>assets.plnt.earth</h2>
-  <div class="version">Full-Moon Edition · Nov 5 2025 · v1.2 Primary Light</div>
+  <div class="version">Full-Moon Edition · Nov 5 2025 · v1.3 Accessibility Legend</div>
 </header>
 
 <main>
   <div class="grid">
-    <div class="swatch" style="background:var(--bee-gradient);">☀️<label>Tristan Bee Sol</label></div>
-    <div class="swatch" style="background:var(--moon-gradient);">🌕<label>Quietmoon L. Moon</label></div>
-    <div class="swatch" style="background:var(--monique-gradient);">🌿<label>Monique Flowe</label></div>
-    <div class="swatch" style="background:var(--sabrina-gradient);">🍯<label>Sabrina Carpenter</label></div>
-    <div class="swatch" style="background:var(--marina-gradient);">💜<label>Marina Diamandis</label></div>
-    <div class="swatch" style="background:var(--sigrid-gradient);">💎<label>Sigrid Solheim</label></div>
-    <div class="swatch" style="background:var(--dagny-gradient);">🌸<label>Dagny Royke</label></div>
-    <div class="swatch" style="background:var(--kendyl-gradient);">🗝<label>Kendyl Skinner</label></div>
-    <div class="swatch" style="background:var(--obsidian-gradient);">🌑<label>Obsidian Night</label></div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--bee-gradient);color:var(--bee-text);">☀️ Tristan Bee Sol</div>
+      <div class="legend"><span style="background:var(--bee-text)"></span>#2b1a00</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--moon-gradient);color:var(--moon-text);">🌕 Quietmoon L. Moon</div>
+      <div class="legend"><span style="background:var(--moon-text)"></span>#0b1833</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--monique-gradient);color:var(--monique-text);">🌿 Monique Flowe</div>
+      <div class="legend"><span style="background:var(--monique-text)"></span>#00332a</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--sabrina-gradient);color:var(--sabrina-text);">🍯 Sabrina Carpenter</div>
+      <div class="legend"><span style="background:var(--sabrina-text)"></span>#4a2b00</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--marina-gradient);color:var(--marina-text);">💜 Marina Diamandis</div>
+      <div class="legend"><span style="background:var(--marina-text)"></span>#2a1448</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--sigrid-gradient);color:var(--sigrid-text);">💎 Sigrid Solheim</div>
+      <div class="legend"><span style="background:var(--sigrid-text)"></span>#142b3a</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--dagny-gradient);color:var(--dagny-text);">🌸 Dagny Royke</div>
+      <div class="legend"><span style="background:var(--dagny-text)"></span>#3a1426</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--kendyl-gradient);color:var(--kendyl-text);">🗝 Kendyl Skinner</div>
+      <div class="legend"><span style="background:var(--kendyl-text)"></span>#123833</div>
+    </div>
+
+    <div class="swatch">
+      <div class="gradient-box" style="background:var(--obsidian-gradient);color:var(--obsidian-text);">🌑 Obsidian Night</div>
+      <div class="legend"><span style="background:var(--obsidian-text)"></span>#fafafa</div>
+    </div>
+
   </div>
 </main>
 
