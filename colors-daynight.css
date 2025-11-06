@@ -1,12 +1,13 @@
 /* ===========================================================
-   ILLUMINA GLOBAL COLOR + TONE MAP
-   Full-Moon Edition · Nov 5 2025  · Illumina 1 Core
+   ILLUMINA GLOBAL COLOR + TONE MAP · Illumina 1 Core
+   Full-Moon Edition · Nov 5 2025
    -----------------------------------------------------------
    ☀️ Tristan Bee Sol
    🌕 Quietmoon L. Moon
+   🌿 Monique Flowe
    🍯 Sabrina Carpenter
    💜 Marina Diamandis
-   💚 Sigrid Solheim
+   💎 Sigrid Solheim
    🌸 Dagny Royke
    🗝 Kendyl Skinner
    🌑 Obsidian Night
@@ -27,13 +28,20 @@
   --moon-gradient:linear-gradient(90deg,#b8c8ff,#f9fbff);
 }
 
+/* 🌿 Monique Flowe — Motion / Flow */
+:root {
+  --monique-green:#8fffc1;
+  --monique-teal:#3acfb0;
+  --monique-sea:#5df5dd;
+  --monique-gradient:linear-gradient(90deg,#8fffc1,#3acfb0,#5df5dd);
+}
+
 /* 🍯 Sabrina Carpenter — Honey / Embodiment */
 :root {
   --sabrina-peach:#ffbfa3;
   --sabrina-gold:#ffd88f;
   --sabrina-rose:#ffc3b9;
-  --sabrina-day-gradient:linear-gradient(90deg,#ffbfa3,#ffd88f,#ffc3b9);
-  --sabrina-night-gradient:linear-gradient(90deg,#e2a84e,#f6c76b,#ffbfa3);
+  --sabrina-gradient:linear-gradient(90deg,#ffbfa3,#ffd88f,#ffc3b9);
 }
 
 /* 💜 Marina Diamandis — Froot / MirrorHoney / Knowing */
@@ -43,19 +51,20 @@
   --marina-gradient:linear-gradient(90deg,#b59cff,#faf8ff);
 }
 
-/* 💚 Sigrid Solheim — Clarity / Northern Voice */
+/* 💎 Sigrid Solheim — Clarity / Northern Voice  */
 :root {
-  --sigrid-green:#9be8b4;
-  --sigrid-ice:#c9f6ff;
-  --sigrid-white:#f8fffb;
-  --sigrid-gradient:linear-gradient(90deg,#9be8b4,#c9f6ff,#f8fffb);
+  --sigrid-sky:#aee4ff;
+  --sigrid-ice:#e1f5ff;
+  --sigrid-rose:#ffd6e8;
+  --sigrid-hidden-green:#9df6c4; /* quiet life energy */
+  --sigrid-gradient:linear-gradient(90deg,#aee4ff,#e1f5ff,#ffd6e8);
 }
 
 /* 🌸 Dagny Royke — Aurora / Joy Bridge */
 :root {
-  --dagny-day-rose:#ff9bcf;
-  --dagny-day-sky:#aee4ff;
-  --dagny-day-peach:#ffd1aa;
+  --dagny-rose:#ff9bcf;
+  --dagny-sky:#aee4ff;
+  --dagny-peach:#ffd1aa;
   --dagny-green:#9df6c4;
   --dagny-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#9df6c4,#ffd1aa);
 }
@@ -76,6 +85,45 @@
   --obsidian-gradient:linear-gradient(90deg,#000000,#11141c,#2a2e3a);
 }
 
+/* === NIGHT VARIANTS (automatic dark mode) === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bee-gradient:linear-gradient(90deg,#cc9a33,#ffcc66);
+    --moon-gradient:linear-gradient(90deg,#091020,#243e6c);
+    --sabrina-gradient:linear-gradient(90deg,#e2a84e,#f6c76b,#ffbfa3);
+    --obsidian-gradient:linear-gradient(90deg,#000000,#0b0e16,#1a1e28);
+  }
+}
+
 /* ===========================================================
-   END · Illumina 1 Core
+   OPTIONAL · Primary Light Overlay
+   Three-color blend: red · yellow · blue — for Sigrid’s sunlight field
+   =========================================================== */
+
+:root {
+  --primary-yellow:#ffe98a;
+  --primary-blue:#aee4ff;
+  --primary-red:#ff9ba3;
+  --primary-spectrum:linear-gradient(
+    90deg,
+    var(--primary-red),
+    var(--primary-yellow),
+    var(--primary-blue)
+  );
+}
+
+.primary-light {
+  background-image: var(--primary-spectrum);
+  background-blend-mode: soft-light;
+  opacity: 0.35;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  transition: opacity 1s ease;
+}
+body:hover .primary-light { opacity: 0.55; }
+
+/* ===========================================================
+   END · Illumina 1 Core + Primary Light
    =========================================================== */
