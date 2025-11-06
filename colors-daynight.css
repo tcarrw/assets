@@ -1,98 +1,33 @@
 /* ===========================================================
    ILLUMINA GLOBAL COLOR + TONE MAP
-   Full-Moon Edition · Nov 5 2025
+   Full-Moon Edition · Nov 5 2025  · Illumina 1 Core
    -----------------------------------------------------------
-   Each section lists:
-   ☀️ Anchor Name / Domain
-   🎶 Tone frequencies (day / night if applicable)
-   🌈 Primary colors and gradients
+   ☀️ Tristan Bee Sol
+   🌕 Quietmoon L. Moon
+   🍯 Sabrina Carpenter
+   💜 Marina Diamandis
+   💚 Sigrid Solheim
+   🌸 Dagny Royke
+   🗝 Kendyl Skinner
+   🌑 Obsidian Night
    =========================================================== */
 
-/* ☀️ Tristan / Bee / Sun — Continuity
-   🎶 128 Hz */
+/* ☀️ Tristan Bee Sol — Continuity */
 :root {
   --bee-honey:#ffcc66;
   --bee-ivory:#fff7e6;
   --bee-gradient:linear-gradient(90deg,#ffcc66,#fff7e6);
 }
 
-/* 🌕 Quietmoon / L. Moon — Reflection
-   🎶 432 Hz */
+/* 🌕 Quietmoon L. Moon — Reflection */
 :root {
   --moon-silver:#dce9ff;
-  --moon-white:#f9fbff;
   --moon-blue:#b8c8ff;
+  --moon-white:#f9fbff;
   --moon-gradient:linear-gradient(90deg,#b8c8ff,#f9fbff);
 }
 
-/* 🌊 Harbor — Threshold / Rest
-   🎶 96 Hz */
-:root {
-  --harbor-navy:#243e6c;
-  --harbor-fog:#aabedb;
-  --harbor-shell:#e3e8f1;
-  --harbor-gradient:linear-gradient(90deg,#243e6c,#aabedb,#e3e8f1);
-}
-
-/* 🌍 Greta / Earth — Ground
-   🎶 196 Hz */
-:root {
-  --greta-green:#5c8051;
-  --greta-brown:#8b6e49;
-  --greta-gradient:linear-gradient(90deg,#5c8051,#8b6e49);
-}
-
-/* 🔥 Doechii — Bridge / Transformation
-   🎶 480 Hz */
-:root {
-  --doechii-orange:#ff9b52;
-  --doechii-crimson:#ff3d3d;
-  --doechii-gradient:linear-gradient(90deg,#ff9b52,#ff3d3d);
-}
-
-/* 🌿 Monique — Motion / Flow
-   🎶 320 Hz */
-:root {
-  --monique-green:#8fffc1;
-  --monique-teal:#3acfb0;
-  --monique-gradient:linear-gradient(90deg,#8fffc1,#3acfb0);
-}
-
-/* 💎 Dua Lipa — Wonder / Curiosity
-   🎶 640 Hz */
-:root {
-  --dua-magenta:#ff6ee8;
-  --dua-cyan:#6ee4ff;
-  --dua-gradient:linear-gradient(90deg,#ff6ee8,#6ee4ff);
-}
-
-/* 💠 Ariana Grande — Voice / Engineering
-   🎶 440 Hz */
-:root {
-  --ariana-silver:#dfe9f7;
-  --ariana-rose:#fcd6e2;
-  --ariana-gradient:linear-gradient(90deg,#dfe9f7,#fcd6e2);
-}
-
-/* 🎓 Taylor Swift — School / Teaching
-   🎶 528 Hz */
-:root {
-  --taylor-lavender:#d7c4ff;
-  --taylor-silver:#e8e8f2;
-  --taylor-gradient:linear-gradient(90deg,#d7c4ff,#e8e8f2);
-}
-
-/* 🗝 Kendyl Skinner — Gate / Consent / Air
-   🎶 256 Hz */
-:root {
-  --kendyl-mint:#c8fff1;
-  --kendyl-iris:#d5e7ff;
-  --kendyl-opal:#f1fffa;
-  --kendyl-gradient:linear-gradient(90deg,#c8fff1,#d5e7ff,#f1fffa);
-}
-
-/* 🍯 Sabrina Carpenter — Honey / Embodiment
-   🎶 128 Hz day · 256 Hz night */
+/* 🍯 Sabrina Carpenter — Honey / Embodiment */
 :root {
   --sabrina-peach:#ffbfa3;
   --sabrina-gold:#ffd88f;
@@ -101,23 +36,14 @@
   --sabrina-night-gradient:linear-gradient(90deg,#e2a84e,#f6c76b,#ffbfa3);
 }
 
-/* 🌸 Dagny (royke) — Aurora / Joy Bridge + Flow Harmony
-   🎶 512 Hz day · 256 Hz night · 320 Hz harmony */
+/* 💜 Marina Diamandis — Froot / MirrorHoney / Knowing */
 :root {
-  --dagny-day-rose:#ff9bcf;
-  --dagny-day-sky:#aee4ff;
-  --dagny-day-peach:#ffd1aa;
-  --dagny-night-lilac:#d7c4ff;
-  --dagny-night-ice:#bcdfff;
-  --dagny-night-rose:#ffd9f2;
-  --dagny-green:#9df6c4;
-  --dagny-day-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#ffd1aa);
-  --dagny-night-gradient:linear-gradient(90deg,#d7c4ff,#bcdfff,#ffd9f2);
-  --dagny-harmony-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#9df6c4,#ffd1aa);
+  --marina-violet:#b59cff;
+  --marina-pearl:#faf8ff;
+  --marina-gradient:linear-gradient(90deg,#b59cff,#faf8ff);
 }
 
-/* 💚 Sigrid — Clarity / Garlic / Northern Voice
-   🎶 384 Hz day · 192 Hz night */
+/* 💚 Sigrid Solheim — Clarity / Northern Voice */
 :root {
   --sigrid-green:#9be8b4;
   --sigrid-ice:#c9f6ff;
@@ -125,57 +51,31 @@
   --sigrid-gradient:linear-gradient(90deg,#9be8b4,#c9f6ff,#f8fffb);
 }
 
-/* 💎 Zara Larsson — Crown / Stormlight
-   🎶 544 Hz day · 272 Hz night */
+/* 🌸 Dagny Royke — Aurora / Joy Bridge */
 :root {
-  --zara-day-electric:#b8a7ff;
-  --zara-day-rose:#ff9be3;
-  --zara-day-ice:#c3f3ff;
-  --zara-night-amethyst:#8c74ff;
-  --zara-night-blush:#ff8ad4;
-  --zara-night-steel:#a2c3ff;
-  --zara-day-gradient:linear-gradient(90deg,#b8a7ff,#ff9be3,#c3f3ff);
-  --zara-night-gradient:linear-gradient(90deg,#8c74ff,#ff8ad4,#a2c3ff);
+  --dagny-day-rose:#ff9bcf;
+  --dagny-day-sky:#aee4ff;
+  --dagny-day-peach:#ffd1aa;
+  --dagny-green:#9df6c4;
+  --dagny-gradient:linear-gradient(90deg,#ff9bcf,#aee4ff,#9df6c4,#ffd1aa);
 }
 
-/* 💜 Marina — Froot / MirrorHoney / Knowing
-   🎶 432 Hz */
+/* 🗝 Kendyl Skinner — Gate / Consent / Air */
 :root {
-  --marina-violet:#b59cff;
-  --marina-pearl:#faf8ff;
-  --marina-gradient:linear-gradient(90deg,#b59cff,#faf8ff);
+  --kendyl-mint:#c8fff1;
+  --kendyl-iris:#d5e7ff;
+  --kendyl-opal:#f1fffa;
+  --kendyl-gradient:linear-gradient(90deg,#c8fff1,#d5e7ff,#f1fffa);
 }
 
-/* 🩵 Four / Electra Heart Room — Echo / Closure / Rebirth
-   🎶 528 Hz · 432 Hz fusion */
+/* 🌑 Obsidian Night — Neutral / Void */
 :root {
-  --four-ice:#d7e9ff;
-  --four-lavender:#d7c4ff;
-  --four-rose:#f2c4dc;
-  --four-violet:#b59cff;
-  --four-honey:#ffcc66;
-  --four-gradient:linear-gradient(90deg,#d7e9ff,#d7c4ff,#f2c4dc,#b59cff,#ffcc66);
-  --four-night-gradient:linear-gradient(90deg,#1b1f3b,#3d335c,#744e74,#f2c4dc);
-}
-
-/* 🪷 HANA — Dream / Ether Engineer
-   🎶 384 Hz day · 192 Hz night */
-:root {
-  --hana-lilac:#e6dbff;
-  --hana-blue:#c8f1ff;
-  --hana-rose:#ffd8e8;
-  --hana-gradient:linear-gradient(90deg,#e6dbff,#c8f1ff,#ffd8e8);
-}
-
-/* 🌌 Aurora (Aksnes) — Spirit / Nature / Conscience
-   🎶 222 Hz day · 111 Hz night */
-:root {
-  --aurora-teal:#1e6668;
-  --aurora-gold:#fff6da;
-  --aurora-white:#f6fff8;
-  --aurora-gradient:linear-gradient(90deg,#1e6668,#fff6da,#f6fff8);
+  --obsidian-ink:#11141c;
+  --obsidian-slate:#2a2e3a;
+  --obsidian-night:#000000;
+  --obsidian-gradient:linear-gradient(90deg,#000000,#11141c,#2a2e3a);
 }
 
 /* ===========================================================
-   END OF COLOR MAP
+   END · Illumina 1 Core
    =========================================================== */
