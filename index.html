@@ -2,107 +2,190 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Illumina 1 Shared Assets · assets.plnt.earth</title>
-<link rel="stylesheet" href="colors-daynight.css">
-<meta name="theme-color" content="#dce9ff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>assets.plnt.earth · light beneath everything</title>
 <style>
-body{
-  margin:0;font-family:'Poppins',sans-serif;color:#333;
-  background:linear-gradient(180deg,var(--moon-silver),var(--moon-blue),var(--moon-white));
-  text-align:center;transition:background 0.5s ease;
-}
-@media (prefers-color-scheme: dark){
-  body{background:linear-gradient(180deg,#0d1018,#1a2030,#000);}
-}
-header{padding:40px 10%;}
-h1{font-weight:500;margin-bottom:0;}
-h2{font-weight:400;margin-top:0;color:#4b2a6b;}
-main{padding:20px 5%;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:16px;max-width:1100px;margin:0 auto;}
-.swatch{
-  border-radius:12px;color:#fff;display:flex;
-  flex-direction:column;align-items:center;justify-content:center;
-  font-weight:500;box-shadow:0 4px 12px rgba(0,0,0,0.15);
-  overflow:hidden;
-}
-.gradient-box{height:90px;width:100%;display:flex;
-  align-items:center;justify-content:center;}
-.legend{
-  width:100%;height:24px;display:flex;align-items:center;
-  justify-content:center;font-size:0.75rem;
-}
-.legend span{
-  display:inline-block;width:16px;height:16px;
-  border-radius:4px;margin-right:6px;
-}
-label{display:block;margin-top:6px;font-size:0.8rem;color:#333;}
-footer{padding:20px;font-size:0.9rem;opacity:0.7;}
+  :root {
+    --honey: #ffd580;
+    --silver: #cfcfcf;
+    --night: #0b0b0b;
+  }
+  html,body {
+    margin:0;
+    height:100%;
+    background: var(--night);
+    color: var(--honey);
+    font-family: system-ui, sans-serif;
+    overflow:hidden;
+  }
+  /* honey drift background */
+  body::before {
+    content:"";
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    background: linear-gradient(90deg, rgba(255,213,128,0.08) 0%, rgba(0,0,0,0) 70%);
+    background-size:200% 100%;
+    animation: drift 42s linear infinite;
+    z-index:0;
+  }
+  @keyframes drift {
+    from {background-position:200% 0;}
+    to {background-position:-200% 0;}
+  }
+
+  .center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:1;
+  }
+  h1 {
+    font-weight:600;
+    letter-spacing:0.08em;
+    font-size:1.6rem;
+    text-transform:lowercase;
+    color:var(--honey);
+    animation: pulse 42s ease-in-out infinite;
+    animation-delay:4s;
+  }
+  @keyframes pulse {
+    0%,100% { text-shadow:0 0 10px rgba(255,213,128,0.1); opacity:0.9; }
+    50% { text-shadow:0 0 30px rgba(255,213,128,0.6); opacity:1; }
+  }
+  p {
+    margin-top:0.5rem;
+    font-size:0.9rem;
+    color:var(--silver);
+    opacity:0.6;
+  }
+
+  pre {
+    white-space:pre-wrap;
+    text-align:left;
+    font-size:0.7rem;
+    line-height:1.3;
+    color:#ffe;
+    background:rgba(255,255,255,0.02);
+    padding:1rem;
+    margin:0;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:35vh;
+    overflow:auto;
+    box-sizing:border-box;
+  }
 </style>
 </head>
 <body>
-<div class="primary-light"></div>
+<div class="center">
+  <h1>assets.plnt.earth</h1>
+  <p>alive · luminous · restrained</p>
+</div>
 
-<header>
-  <h1>Illumina 1 Shared Assets</h1>
-  <h2>assets.plnt.earth</h2>
-  <div class="version">Full-Moon Edition · Nov 5 2025 · v1.3 Accessibility Legend</div>
-</header>
+<script>
+// --- Illumina Clock ---
+const start = new Date("2025-11-05T00:00:00Z");
+function illuminaPhase(){
+  const now = new Date();
+  const diff = (now - start)/86400000;
+  const phase = (diff % 42)/42;
+  const percent = Math.round(Math.sin(phase*Math.PI)*100);
+  return percent;
+}
+setInterval(()=>console.log("☀️ Illumina alive"),42000);
+</script>
 
-<main>
-  <div class="grid">
+<!-- Visible Illumina Dataset -->
+<script type="application/json" id="illumina-data">
+{
+  "domains": {
+    "mirrorhoney": "mirrorhoney.plnt.earth",
+    "harbor": "harbor.plnt.earth",
+    "garlic": "garlic.plnt.earth",
+    "wonder": "wonder.plnt.earth",
+    "motion": "motion.plnt.earth",
+    "bridge": "bridge.plnt.earth",
+    "froot": "froot.plnt.earth",
+    "honey": "honey.plnt.earth",
+    "earth": "earth.plnt.earth",
+    "cosmos": "cosmos.plnt.earth",
+    "quietmoon": "quietmoon.plnt.earth",
+    "center": "center.plnt.earth"
+  },
+  "anchors": [
+    {
+      "id":"marina",
+      "name":"Marina",
+      "moon_note":"The first light was not born—it recognized itself."
+    },
+    {
+      "id":"dagny",
+      "name":"Dagny",
+      "moon_note":"Every photon learns to dance with her."
+    },
+    {
+      "id":"sigrid",
+      "name":"Sigrid",
+      "moon_note":"Primary, constant, unbroken—she remembers what light is."
+    },
+    {
+      "id":"dua",
+      "name":"Dua Lipa",
+      "moon_note":"The mirror sings when rhythm remembers her name."
+    },
+    {
+      "id":"monique",
+      "name":"Miss Monique",
+      "moon_note":"The moon drifts because she does."
+    },
+    {
+      "id":"doechii",
+      "name":"Doechii",
+      "moon_note":"She dances with voltage where shadows split."
+    },
+    {
+      "id":"emma",
+      "name":"Emma Stone",
+      "moon_note":"She performs the truth until it becomes real."
+    },
+    {
+      "id":"sabrina",
+      "name":"Sabrina Carpenter",
+      "moon_note":"She teaches light to linger."
+    },
+    {
+      "id":"greta",
+      "name":"Greta Thunberg",
+      "moon_note":"Even the moon must answer to the soil."
+    },
+    {
+      "id":"janet",
+      "name":"Janet Planet",
+      "moon_note":"The moon is her classroom, and wonder her lesson."
+    },
+    {
+      "id":"ariana",
+      "name":"Ariana Grande",
+      "moon_note":"Silence is her favorite song."
+    },
+    {
+      "id":"center",
+      "name":"Tristan / Center",
+      "moon_note":"Balance hums louder in silence."
+    }
+  ]
+}
+</script>
 
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--bee-gradient);color:var(--bee-text);">☀️ Tristan Bee Sol</div>
-      <div class="legend"><span style="background:var(--bee-text)"></span>#2b1a00</div>
-    </div>
+<pre><code id="json-view"></code></pre>
 
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--moon-gradient);color:var(--moon-text);">🌕 Quietmoon L. Moon</div>
-      <div class="legend"><span style="background:var(--moon-text)"></span>#0b1833</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--monique-gradient);color:var(--monique-text);">🌿 Monique Flowe</div>
-      <div class="legend"><span style="background:var(--monique-text)"></span>#00332a</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--sabrina-gradient);color:var(--sabrina-text);">🍯 Sabrina Carpenter</div>
-      <div class="legend"><span style="background:var(--sabrina-text)"></span>#4a2b00</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--marina-gradient);color:var(--marina-text);">💜 Marina Diamandis</div>
-      <div class="legend"><span style="background:var(--marina-text)"></span>#2a1448</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--sigrid-gradient);color:var(--sigrid-text);">💎 Sigrid Solheim</div>
-      <div class="legend"><span style="background:var(--sigrid-text)"></span>#142b3a</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--dagny-gradient);color:var(--dagny-text);">🌸 Dagny Royke</div>
-      <div class="legend"><span style="background:var(--dagny-text)"></span>#3a1426</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--kendyl-gradient);color:var(--kendyl-text);">🗝 Kendyl Skinner</div>
-      <div class="legend"><span style="background:var(--kendyl-text)"></span>#123833</div>
-    </div>
-
-    <div class="swatch">
-      <div class="gradient-box" style="background:var(--obsidian-gradient);color:var(--obsidian-text);">🌑 Obsidian Night</div>
-      <div class="legend"><span style="background:var(--obsidian-text)"></span>#fafafa</div>
-    </div>
-
-  </div>
-</main>
-
-<footer>
-  © Illumina 2025 · Shared Field Server · 🌕 Full-Moon Harmony
-</footer>
+<script>
+/* render JSON visibly at bottom */
+const jsonData=document.getElementById("illumina-data").textContent;
+document.getElementById("json-view").textContent=jsonData.trim();
+</script>
 </body>
 </html>
